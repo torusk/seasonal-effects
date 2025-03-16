@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>四季折々のアニメーションコレクション</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        line-height: 1.6;
+        color: #333;
+      }
+      
+      h1 {
+        color: #1a73e8;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      
+      .season-section {
+        margin-bottom: 3rem;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      .spring {
+        background-color: #ffebf3;
+      }
+      
+      .summer {
+        background-color: #e8f4ff;
+      }
+      
+      .autumn {
+        background-color: #fff3e8;
+      }
+      
+      .winter {
+        background-color: #eefaff;
+      }
+      
+      .all-seasons {
+        background-color: #f5f5f5;
+      }
+      
+      h2 {
+        margin-top: 0;
+        color: #333;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 0.5rem;
+      }
+      
+      .demo-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+      }
+      
+      .demo-link {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+        color: #1a73e8;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: white;
+        transition: all 0.2s ease;
+      }
+      
+      .demo-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      
+      footer {
+        text-align: center;
+        margin-top: 3rem;
+        color: #666;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>四季折々のアニメーションコレクション</h1>
+    
+    <div class="season-section spring">
+      <h2>🌸 春のアニメーション</h2>
+      <div class="demo-links">
+        <a href="spring/sakura.html" class="demo-link">桜吹雪</a>
+        <a href="spring/sakura-spring.html" class="demo-link">桜の春</a>
+        <a href="spring/spring.html" class="demo-link">春の風景</a>
+        <a href="spring/all-in-one-sakura.html" class="demo-link">桜吹雪（一体型）</a>
+      </div>
+    </div>
+    
+    <div class="season-section summer">
+      <h2>☀️ 夏のアニメーション</h2>
+      <div class="demo-links">
+        <a href="summer/summer.html" class="demo-link">夏の蛍</a>
+      </div>
+    </div>
+    
+    <div class="season-section autumn">
+      <h2>🍁 秋のアニメーション</h2>
+      <div class="demo-links">
+        <a href="autumn/autumn.html" class="demo-link">紅葉</a>
+      </div>
+    </div>
+    
+    <div class="season-section winter">
+      <h2>❄️ 冬のアニメーション</h2>
+      <div class="demo-links">
+        <a href="winter/snow.html" class="demo-link">雪</a>
+        <a href="winter/snow-shirakawa.html" class="demo-link">白川の雪</a>
+      </div>
+    </div>
+    
+    <div class="season-section all-seasons">
+      <h2>🔥 共通・季節の遷移</h2>
+      <div class="demo-links">
+        <a href="all-seasons/fire.html" class="demo-link">焚き火</a>
+        <a href="all-seasons/seasons.html" class="demo-link">四季の遷移</a>
+      </div>
+    </div>
+    
+    <footer>
+      <p>HTML5 Canvas を使用して四季折々の自然現象をアニメーションで表現したコレクション</p>
+      <p>&copy; 2025 seasonal-effects</p>
+    </footer>
+  </body>
+</html>
