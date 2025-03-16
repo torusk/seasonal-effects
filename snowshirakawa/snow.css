@@ -1,0 +1,33 @@
+/* 雪のアニメーション用スタイル */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000; /* 夜空をイメージした黒背景（画像が読み込めない場合のフォールバック） */
+  background-image: url('winter.jpg'); /* 冬の背景画像 */
+  background-size: cover; /* 画面いっぱいに表示 */
+  background-position: center; /* 中央に配置 */
+  background-attachment: fixed; /* スクロールしても固定 */
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.content h1 {
+  color: #ddeeff; /* 氷のような青白色 */
+}
+
+#sakura-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}

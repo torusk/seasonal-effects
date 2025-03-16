@@ -1,0 +1,30 @@
+/* 蛍のアニメーション用スタイル */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #001426; /* 夏の夜空の深い青 */
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.content h1 {
+  color: #b3ff00; /* 蛍光グリーン */
+  text-shadow: 0 0 10px rgba(179, 255, 0, 0.6);
+}
+
+#summer-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}

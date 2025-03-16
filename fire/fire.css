@@ -1,0 +1,72 @@
+/* 焚き火のアニメーション用スタイル */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #0a0a0a; /* 暗い夜の背景 */
+  overflow: hidden;
+  color: #ddd;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.content h1 {
+  color: #ff9d00; /* 炎の色 */
+  text-shadow: 0 0 10px rgba(255, 157, 0, 0.6);
+}
+
+#fireplace-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fire-canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#logs {
+  position: absolute;
+  bottom: 20%;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  z-index: 0;
+}
+
+#logs::before,
+#logs::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  background-color: #3a2614; /* 木の色 */
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#logs::before {
+  transform: rotate(20deg);
+  left: 20px;
+  bottom: 5px;
+}
+
+#logs::after {
+  transform: rotate(-15deg);
+  right: 20px;
+  bottom: 5px;
+}

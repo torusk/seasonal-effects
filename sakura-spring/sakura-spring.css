@@ -1,0 +1,29 @@
+/* 春の桜吹雪アニメーション用スタイル */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #69dae2cb; /* 春らしい淡い青空色 */
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  color: #333; /* 暗めの文字色 */
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.content h1 {
+  color: #d96c98; /* 桜色のタイトル */
+}
+
+#sakura-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
